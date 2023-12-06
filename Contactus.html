@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+<body>
+    <section>
+        <nav>
+            <ul class="menuItems">
+                <li><a href="index.html" data-item='Home'>Home</a></li>
+                <li><a href="About.html" data-item='About Us'>About Us</a></li>
+                <li><a href="SERVICES.html" data-item='Services'>Services</a></li>
+                <li><a href="PRODUCT.html" data-item='Product'>Product</a></li>
+                <li><a href="ContactUs.html" data-item="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="container">
+        <div class="left-column">
+            <h1>Contact Information</h1>
+            <p class="contact-info">
+                Address: No35 Lorong Bertam Indah 4/9, Taman Bertam Perdana, 13200 Kepala Batas<br><br>
+                City: Kepala Batas<br><br>
+                Email: Wellwise_pharmacy@gmail.com<br><br>
+                Phone: +1 800 55 55555
+            </p>
+        </div>
+        <div class="right-column">
+            <h1>Contact Us</h1>
+
+            <form method="POST" onsubmit="return validateForm()">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <button onclick="submitform()" type="submit"  value="Submit">submit<button>
+            </form>
+        </div>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="contact2.js" defer></script>
+</body>
+</html>
+</head>
+</section>
+</html>

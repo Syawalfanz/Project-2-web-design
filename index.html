@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+     <section>
+        <nav>
+            <ul class="menuItems">
+                <li><a href="Index.html" data-item='Home'>Home</a></li>
+                <li><a href="About.html" data-item='About Us'>About Us</a></li>
+                <li><a href="SERVICES.html" data-item='Services'>Services</a></li>
+                <li><a href="PRODUCT.html" data-item='Product'>Product</a></li>
+                <li><a href="Contact Us.html" data-item="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+
+    <div class="slider">
+        <div class="load"></div>
+        <div class="content">
+            <div class="principal">
+                <h1>WELCOME</h1>
+                <p><strong>WELLWISE PHARMACY</p></strong>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="text">
+    Call Now: <span class="blue">+1 800 55 55555</span>
+	
+	<br>
+	<hr>
+	<br>
+	<div id="clock">clock</div>
+	
+	
+	<br>
+	<p id="demo"></p>
+
+   <script>
+   const time = new Date().getHours();
+   let greeting;
+   if (time < 12) {
+   greeting = "Good morning";
+   } else if (time < 20) {
+   greeting = "Good day";
+  }  else {
+   greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+ 
+    <script src="clock2.js"></script>
+
+    <br>
+    <hr>
+    <br>
+    <span class="blue">Awesome Services</span>
+    <p>We provide best wordpress solutions for your business.Thank to our framework you will get more happy customer.</p>
+    <br>
+    <footer>
+    <div class="footer">
+        <ul class="icon">
+          <a href="https://www.facebook.com" class="icon">
+      <img src="img/fb.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com" class="icon">
+      <img src="img/ig.png" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com" class="icon">
+      <img src="img/yt.png" alt="YouTube">
+   </a>
+    <a href="https://twitter.com/" class="icon">
+      <img src="img/tw.png" alt="YouTube">
+   </a>
+</ul>
+        
+        <div class="footer">
+                <input type="email" name="email" class="footer-input" placeholder="Enter your email">
+                <button type="submit" class="footer-button">Subscribe</button>
+            </form>
+    </div>
+    </footer>
+    </div>
+    </body>
+    </html>
+
+
+  
